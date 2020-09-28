@@ -12,7 +12,7 @@ Vue.use(VueToast, {
 	position: "top-right",
 	duration: 5000,
 });
-Vue.$toast.open("Selamat Datang...");
+Vue.$toast.warning("Selamat Datang...");
 
 Vue.use(Vuex);
 

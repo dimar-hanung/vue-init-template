@@ -12,10 +12,10 @@
 	export default {
 		name: "Home",
 		methods: {
-			...mapActions("Photos", ["getPhotos"]),
+			...mapActions("photos", ["getPhotos"]),
 		},
 		computed: {
-			...mapState("Photos", ["photos"]),
+			...mapState("photos", ["photos"]),
 		},
 
 		async mounted() {

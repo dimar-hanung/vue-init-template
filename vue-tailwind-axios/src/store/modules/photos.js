@@ -1,5 +1,5 @@
-import Api from "../modules/api";
-const Photos = {
+import PhotoApi from "@/service/photos";
+export default {
 	namespaced: true,
 	state: () => ({
 		photos: [],
@@ -11,9 +11,7 @@ const Photos = {
 	},
 	actions: {
 		async getPhotos({ commit, state }) {
-			await Api.get("/photos", {
-				params: { _start: state.start, _limit: 5 },
-			})
+			await PhotoApi.get(state)
 				.then((res) => {
 					commit("setPhoto", res.data);
 				})
@@ -21,5 +19,3 @@ const Photos = {
 		},
 	},
 };
-
-export default Photos;
