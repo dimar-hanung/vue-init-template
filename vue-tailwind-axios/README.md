@@ -4,8 +4,12 @@
 - [x] Vue Router
 - [x] Vuex
 - [x] Tailwindcss
-- [ ] Axios
-- [ ] Nprogress
+- [x] Axios
+- [x] Nprogress
+- [x] Vue Cache (vuex-persistedstate)
+- [x] Secure Cache
+- [x] Toast
+
 
 
 ## vscode config for tailwind
