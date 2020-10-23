@@ -24,6 +24,7 @@
     color: #2c3e50;
 
     &.router-link-exact-active {
+      @apply bg-red-700;
       color: #42b983;
     }
   }
